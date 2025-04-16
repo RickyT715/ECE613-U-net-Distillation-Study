@@ -1,0 +1,49 @@
+run:
+  mode: "train"
+  device: "gpu"
+
+dataset:
+  class_name: "SegPC2021Dataset"
+  input_size: 224
+  number_classes: 2
+
+data_loader:
+  train:
+    batch_size: 16
+    shuffle: true
+    num_workers: 4
+    pin_memory: true
+  validation:
+    batch_size: 16
+    shuffle: false
+    num_workers: 4
+    pin_memory: true
+
+training:
+  epochs: 50
+  learning_rate: 0.0001
+  optimizer:
+    name: "Adam"
+    params:
+      lr: 0.0001
+  scheduler:
+    factor: 0.5
+    patience: 10
+  criterion:
+    name: "CrossEntropyLoss"
+    params: {}
+
+model:
+  name: "ResUNet"
+  save_dir: "../saved_models/student/segpc"
+  save_name: "resunet_student.pth"
+  load_weights: false
+  params:
+    in_channels: 4
+    out_channels: 2
+
+distillation:
+  teacher_model_path: "../saved_models/teacher/segpc2021_resunet/best_model_state_dict.pt"
+  temperature: 4.0
+  alpha: 0.5
+  save_path: "../saved_models/student/segpc/resunet_student.pth"
