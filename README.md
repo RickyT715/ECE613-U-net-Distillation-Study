@@ -94,9 +94,9 @@ Size comparison
 
 ### Visualization
 
-![isic2018.png](./images/isic1.png) ![isic2018.png](./images/isic2.png) ![isic2018.png](./images/isic3.png) ![isic2018.png](./images/isic4.png)
+![isic2018.png](./images/isic1.png) ![isic2018.png](./images/isic2.png) ![isic2018.png](./images/isic3.png) ![isic2018.png](./images/isic4.png) ![isic2018.png](./images/isic5.png) ![isic2018.png](./images/isic6.png) ![isic2018.png](./images/isic7.png) ![isic2018.png](./images/isic8.png)
 
 
-![segpc.png](./images/segpc1.png) ![segpc.png](./images/segpc2.png) ![segpc.png](./images/segpc3.png) ![segpc.png](./images/segpc4.png)
+![segpc.png](./images/segpc1.png) ![segpc.png](./images/segpc2.png) ![segpc.png](./images/segpc3.png) ![segpc.png](./images/segpc4.png) ![segpc.png](./images/segpc5.png) ![segpc.png](./images/segpc6.png) ![segpc.png](./images/segpc7.png) ![segpc.png](./images/segpc8.png)
 
 
